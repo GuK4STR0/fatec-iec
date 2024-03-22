@@ -3,18 +3,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int numero1 = 0;
+        int numero2 = 0;
+        int resultado = 0;
+        String operacao = "";
 
         System.out.println("Bem vindo a calculadora rápida Java.");
         System.out.println("Digite 2 números");
 
-        int numero1 = in.nextInt();
-        int numero2 = in.nextInt();
+        numero1 = in.nextInt();
+        numero2 = in.nextInt();
 
         System.out.println("Agora digite o simbolo da operação que deseja fazer");
+        operacao = in.next();
 
-        String operacao = in.next();
-
-        System.out.println("Resultado: " + calcularResultado(numero1, numero2, operacao));
+        resultado = calcularResultado(numero1, numero2, operacao);
+        System.out.println("Resultado: " + resultado);
     }
 
     private static int calcularResultado(int numero1, int numero2, String operacao){
