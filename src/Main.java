@@ -6,7 +6,7 @@ public class Main {
         int numero1 = 0;
         int numero2 = 0;
         int resultado = 0;
-        String operacao = "";
+        String operator = "";
 
         System.out.println("Bem vindo a calculadora rápida Java.");
         System.out.println("Digite 2 números");
@@ -15,9 +15,9 @@ public class Main {
         numero2 = in.nextInt();
 
         System.out.println("Agora digite o simbolo da operação que deseja fazer");
-        operacao = in.next();
+        operator = in.next();
 
-        resultado = calcularResultado(numero1, numero2, operacao);
+        resultado = calcularResultado(numero1, numero2, operator);
         System.out.println("Resultado: " + resultado);
     }
 
