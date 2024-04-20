@@ -9,12 +9,12 @@ public class Main {
         String operator = "";
 
         System.out.println("Bem vindo a calculadora rápida Java.");
-        System.out.println("Digite 2 números");
+        System.out.println("Digite apenas 2 números");
 
         numero1 = in.nextInt();
         numero2 = in.nextInt();
 
-        System.out.println("Agora digite o simbolo da operação que deseja fazer");
+        System.out.println("Agora digite o simbolo da operação");
         operator = in.next();
 
         resultado = calcularResultado(numero1, numero2, operator);
