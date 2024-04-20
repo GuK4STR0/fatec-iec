@@ -9,12 +9,12 @@ public class Main {
         String operator = "";
 
         System.out.println("Bem vindo a calculadora rápida Java.");
-        System.out.println("Digite apenas 2 números");
+        System.out.println("Digite apenas 2 números:");
 
         numero1 = in.nextInt();
         numero2 = in.nextInt();
 
-        System.out.println("Agora digite o simbolo da operação");
+        System.out.println("Agora, digite o símbolo da operação:");
         operator = in.next();
 
         resultado = calcularResultado(numero1, numero2, operator);
@@ -31,13 +31,13 @@ public class Main {
                 return numero1 * numero2;
             case "/":
                 if (numero2 == 0){
-                    System.out.println("Divisão inválida");
+                    System.out.println("Divisão inválida.");
                     return 0;
                 }else {
                     return numero1 / numero2;
                 }
             default:
-                System.out.println("Números inválidos");
+                System.out.println("Números inválidos.");
                 return 0;
         }
     }
